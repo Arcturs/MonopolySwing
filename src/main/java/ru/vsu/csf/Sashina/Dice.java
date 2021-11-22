@@ -13,7 +13,6 @@ public class Dice extends JPanel {
     public Dice(int xCoord, int yCoord, int width, int height) {
         setBorder(new LineBorder(new Color(0, 0, 0)));
         setBounds(xCoord, yCoord, width, height);
-
     }
 
     public void paintComponent(Graphics g) {
@@ -47,13 +46,6 @@ public class Dice extends JPanel {
             g.fillOval(getWidth()/2 - 15, getHeight()/2 - 5/2, 5, 5);
             g.fillOval(getWidth()/2 + 10, getHeight()/2 - 5/2, 5, 5);
         }
-
-    }
-
-
-    public void rollDice(){
-        faceValue = rnd.nextInt(6) + 1;
-        repaint();
     }
 
     public int getFaceValue(){
@@ -63,9 +55,5 @@ public class Dice extends JPanel {
     public Dice(int xCoord, int yCoord, int width, int height, String labelString) {
         setBorder(new LineBorder(new Color(0, 0, 0)));
         setBounds(xCoord, yCoord, width, height);
-
     }
-
-
-
 }
